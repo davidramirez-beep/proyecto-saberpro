@@ -92,7 +92,7 @@ proyecto-saberpro/
 
 1. Clonar el repositorio:
 
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/davidramirez-beep/proyecto-saberpro
 
 
 2. Entrar al proyecto:
