@@ -183,18 +183,33 @@ El proyecto se divide en tres fases principales:
 ---
 
 ## 📁 Estructura del proyecto
+
 proyecto-saberpro/
 │
 ├── data/
-│ └── SaberPro.xlsx
-│
-├── notebooks/
-│ ├── 01_exploracion.ipynb
-│ ├── 02_eda.ipynb
-│ ├── 03_preprocesamiento.ipynb
+│   ├── tabular/
+│   │   └── SaberPro.xlsx
+│   │
+│   ├── texto/
+│   │   ├── db-frutas.txt
+│   │   ├── db-legumes.txt
+│   │   └── db-verduras.txt
+│   │
+│   └── imagenes/
+│       ├── raw/
+│       │   ├── 2014-12-06.tif
+│       │   ├── 2015-12-25.tif
+│       │   ├── 2016-12-11.tif
+│       │   ├── ...
+│       │
+│       └── processed/
+│           ├── area_0.csv
+│           ├── error_0.csv
+│           ├── mean_data.csv
+│           └── train_df.csv
 │
 ├── README.md
-├── requirements.txt
+
 
 ## ▶️ Cómo ejecutar el proyecto
 
