@@ -10,11 +10,118 @@ El trabajo se desarrolla como parte del curso de Análisis de Datos, aplicando c
 
 ##  Dataset
 
-- Fuente: Datos de pruebas Saber Pro
-- Tipo: Datos tabulares
-- Formato: Excel (.xlsx)
+1. Tabular
+- Fuente: Datos abiertos Colombia
+- Tipo: Tabular
+- Origen : Secundaria (Este dataset proviene del ICFES y fue obtenido a través del portal Datos Abiertos Colombia.Es decir, los datos ya fueron recolectados por otra entidad.)
 
-El dataset contiene información académica, sociodemográfica y resultados de estudiantes en las pruebas Saber Pro.
+Características básicas
+Número de registros (filas): 48.990
+Número de variables (columnas): 58
+Tamaño del archivo: 14 MB
+
+Documentación y aplicaciones
+Nivel de documentación:
+El dataset cuenta con una descripción general en el portal Datos Abiertos Colombia, donde se explica su origen y propósito. Además, está relacionado con el ICFES.
+Sin embargo, no incluye un diccionario de datos completamente detallado dentro del archivo, por lo que algunas variables pueden generar dudas.
+
+Comprensión de variables:
+Es un dataset de complejidad media:
+Incluye variables claras como género, edad, institución educativa y puntajes por competencias
+Contiene múltiples columnas relacionadas con resultados en módulos (lectura crítica, inglés, razonamiento cuantitativo, etc.)
+Algunas variables tienen nombres técnicos o abreviados, lo que dificulta su interpretación sin documentación adicional
+
+Aplicaciones:
+
+Análisis educativo
+Análisis socioeconómico
+Visualización de datos (dashboards en Power BI o Python)
+Modelos de Machine Learning para predicción de rendimiento académico
+Proyectos académicos de análisis de datos
+
+
+2. Texto
+- Fuente : Kaggle
+- Tipos de datos : Texto
+- Origen : Secundaria (los datos fueron recolectados y publicados por terceros en la plataforma Kaggle)
+
+Características básicas
+Número de registros: 536
+Número de variables: 2 (texto y categoría)
+Distribución de clases:
+Frutas: 176
+Legumbres: 180
+Verduras: 180
+Tamaño del archivo: 4,32 KB
+
+Documentación y aplicaciones
+Nivel de documentación:
+El dataset cuenta con una descripción general en Kaggle que explica su objetivo, aunque no incluye un diccionario de datos detallado.
+
+Comprensión de variables:
+Es un dataset sencillo y fácil de interpretar:
+Una variable contiene el nombre del alimento (texto)
+Otra variable indica la categoría (fruta, legumbre o verdura)
+
+Aplicaciones:
+Clasificación de texto
+Procesamiento de lenguaje natural (NLP)
+Entrenamiento de modelos de Machine Learning
+Proyectos educativos de análisis de datos
+
+
+3. Imágenes
+Fuente: Kaggle
+Tipo: Imágenes
+Origen: Secundaria (Este dataset fue recopilado como parte de un proyecto académico de Machine Learning del Instituto Data Science y publicado en Kaggle, por lo que no fue recolectado directamente por el usuario.)
+
+Características básicas
+Número de registros (imágenes): 36 imágenes (una por año desde 1986 hasta 2021)
+Número de variables (columnas): No aplica directamente (las imágenes contienen información en bandas espectrales como nir, swir1 y red)
+Tamaño del archivo: 495 MB
+
+Documentación y aplicaciones
+
+Nivel de documentación:
+El dataset cuenta con una descripción detallada en Kaggle, donde se explica el objetivo del proyecto, el contexto del análisis de deforestación y los archivos incluidos.
+Además, incluye un informe del trabajo realizado, lo que mejora la comprensión general del dataset.
+
+Comprensión de variables:
+Es un dataset de complejidad media:
+
+Las imágenes satelitales están en formato .tif y utilizan combinaciones de bandas (nir, swir1, red) para resaltar la vegetación
+Incluye datasets adicionales en formato CSV como:
+Datos de entrenamiento para modelos supervisados
+Métricas del modelo
+Series temporales de deforestación
+Datos de error del modelo
+Requiere conocimientos básicos de teledetección o análisis de imágenes para su correcta interpretación
+
+Aplicaciones:
+
+Análisis ambiental (deforestación)
+Visión por computador (Computer Vision)
+Modelos de Machine Learning supervisado
+Análisis de series temporales
+Proyectos académicos de ciencia de datos
+
+
+Dataset seleccionado: SaberPro (ICFES)
+
+El dataset seleccionado para el desarrollo del proyecto es el dataset tabular correspondiente a los resultados de las pruebas Saber Pro.
+
+Justificación:
+Completitud:
+El dataset cuenta con un alto número de registros (48.990), lo que permite realizar un análisis robusto. Además, presenta posibles valores faltantes que pueden ser tratados en el análisis exploratorio.
+
+Relevancia:
+Los datos corresponden al contexto educativo en Colombia, lo que lo hace altamente relevante para el análisis socioeconómico y académico.
+
+Documentación:
+Aunque no cuenta con un diccionario de datos completamente detallado, el dataset incluye una descripción general en el portal de Datos Abiertos, lo que permite comprender su estructura y propósito.
+
+Manejabilidad:
+Al estar en formato tabular (Excel), es fácilmente manipulable mediante herramientas como Python (pandas) o Power BI, lo que facilita su análisis exploratorio y preprocesamiento.
 
 ---
 
@@ -26,6 +133,7 @@ El dataset contiene información académica, sociodemográfica y resultados de e
 - Explorar relaciones entre variables
 - Aplicar técnicas de preprocesamiento
 - Reducir la dimensionalidad mediante PCA
+
 
 ---
 
